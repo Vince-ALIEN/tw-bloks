@@ -1,0 +1,32 @@
+{
+	"name": "tw-bloks",
+	"version": "0.1.0",
+	"description": "Example block scaffolded with Create Block tool.",
+	"author": "The WordPress Contributors",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"tailwindbuild": "tailwindcss -i ./src/input.css -o ./build-assets/index.css --postcss --minify",
+		"tailwindwatch": "tailwindcss -i ./src/input.css -o ./build-assets/index.css --watch --postcss",
+		"tailwind:watch": "npm run tailwind:build -- --watch",
+		"build": "wp-scripts build --webpack-copy-php && npm run tailwindbuild",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start --webpack-copy-php & npm run tailwindwatch"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^27.9.0",
+		"tailwindcss": "^3.4.4"
+	},
+	"dependencies": {
+		"@wordpress/components": "^28.0.0",
+		"clsx": "^2.1.1",
+		"tailwindcss-container-query": "^1.1.0",
+		"autoprefixer": "^10.4.19",
+    	"postcss": "^8.4.38",
+    	"postcss-nested": "^6.0.1"
+	}
+}
