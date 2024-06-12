@@ -25,8 +25,8 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
 function create_block_tw_bloks_block_init() {
-	register_block_type( __DIR__ . '/build/column' );
-	register_block_type( __DIR__ . '/build/columns' );
+	register_block_type( __DIR__ . '/build/tw-container' );
+	register_block_type( __DIR__ . '/build/tw-columns' );
 }
 add_action( 'init', 'create_block_tw_bloks_block_init' );
 

@@ -1,0 +1,23 @@
+{
+    "apiVersion": 2,
+    "name": "create-block/tw-container",
+    "title": "TW Container",
+    "category": "layout",
+    "icon": "columns",
+    "attributes": {
+        "className": {
+            "type": "string",
+            "default": "grid lg:grid-cols-2 gap-2 my-2"
+        },
+        "columns": {
+            "type": "number",
+            "default": 2
+        }
+    },
+    "supports": {
+        "html": false
+    },
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./editor.css",
+    "style": "file:./style.css"
+}

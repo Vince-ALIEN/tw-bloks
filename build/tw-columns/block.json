@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/tw-columns",
+  "version": "0.1.0",
+  "title": "Tw Columns",
+  "category": "layout",
+  "parent": [
+    "create-block/tw-container"
+  ],
+  "attributes": {
+    "className": {
+      "type": "string"
+    }
+  },
+  "icon": "smiley",
+  "description": "Example block scaffolded with Create Block tool.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "tw-bloks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

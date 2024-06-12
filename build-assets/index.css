@@ -1,1 +1,53 @@
-.container{width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}@media (min-width:1536px){.container{max-width:1536px}}.block{display:block}.flex{display:flex}.w-full{width:100%}.flex-wrap{flex-wrap:wrap}.rounded-lg{border-radius:.5rem}.bg-slate-400{--tw-bg-opacity:1;background-color:rgb(148 163 184/var(--tw-bg-opacity))}.bg-slate-500{--tw-bg-opacity:1;background-color:rgb(100 116 139/var(--tw-bg-opacity))}.py-4{padding-bottom:1rem;padding-top:1rem}@media (min-width:1024px){.lg\:w-1\/2{width:50%}}
+.static	{
+  position: static;
+}
+
+.my-2	{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.block	{
+  display: block;
+}
+
+.grid	{
+  display: grid;
+}
+
+.transform	{
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.gap-2	{
+  gap: 0.5rem;
+}
+
+.bg-gray-100	{
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.p-4	{
+  padding: 1rem;
+}
+
+.grid-cols-2	{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (min-width: 640px)	{
+  .sm\:grid-cols-1	{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px)	{
+  .lg\:grid-cols-2	{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}	
