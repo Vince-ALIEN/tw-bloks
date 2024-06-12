@@ -1,2 +1,2 @@
 # tw-bloks
- TW Blocks is a Wordpress gutemberg plugin build with Tailwind css
+ TW Blocks is a Wordpress gutemberg plugin build with Tailwind css and create-block
